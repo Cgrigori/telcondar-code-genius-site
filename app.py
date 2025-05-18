@@ -13,9 +13,9 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/contact_us")
+def contact_us():
+    return render_template("contact_us.html")
 
 @app.route("/services")
 def services():
