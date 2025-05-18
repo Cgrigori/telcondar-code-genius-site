@@ -18,16 +18,30 @@
     color: white;
   }
 
-  .content {
-    padding-top: 80px; /* Keeps space below fixed navbar */
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .btn a {
-    color: inherit;
-    text-decoration: none;
-  }
+ .content {
+  background-color: rgba(255, 255, 255, 0.9); /* white with slight transparency */
+  color: black; /* black text */
+  max-width: 350px;  /* narrower box */
+  padding: 20px;
+  margin: 120px 20px 20px 20px; /* top margin to clear navbar, left margin to keep from edge */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: left;
+}
+.content a {
+  color: #0d6efd; /* Bootstrap's blue for links inside */
+  text-decoration: none;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+.content button {
+  margin-top: 15px;
+}
+.content button a {
+  display: block; /* full button clickable */
+  padding: 6px 12px;
+}
 </style>
 </head>
 <body>
