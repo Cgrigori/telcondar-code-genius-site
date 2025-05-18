@@ -1,1 +1,0 @@
-# telcondar-code-genius-site

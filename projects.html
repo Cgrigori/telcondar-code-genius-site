@@ -1,5 +1,52 @@
-{% extends "layout.html" %}
-{% block content %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-image: url('assets/homepage.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .navbar {
+      background-color: rgba(0, 72, 73, 0.8);
+      color: white;
+    }
+    .content {
+      padding-top: 80px;
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Telcontar Code Genius</a>
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="contact.html">Contact us</a>
+          <a class="nav-item nav-link" href="projects.html">Projects</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<style>
+    /* Style for the div */
+    .info-box {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 2px solid #333;
+        padding: 10px;
+    }
+
+
+    /* Add padding to make space for the fixed navbar */
+    .content {
+        padding-top: 40px; /* Adjust this value based on the height of your navbar */
+    }
+</style>
+  <main class="content">
 <div class="container mt-5 pt-5 text-white">
     <div class="row">
         <div class="col-md-10 offset-md-1 bg-light-custom p-4 rounded shadow-lg">
@@ -29,4 +76,7 @@
         </div>
     </div>
 </div>
-{% endblock %}
+  </main>
+
+</body>
+</html>

@@ -1,23 +1,45 @@
-{% extends "layout.html" %}
-
-{% block content %}
-<style>
-    /* Style for the div */
-    .info-box {
-        background-color: rgba(255, 255, 255, 0.5);
-        border: 2px solid #333;
-        padding: 10px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telcontar Code Genius</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-image: url('assets/homepage.jpg');
+      background-size: cover;
+      background-attachment: fixed;
     }
-
-
-    /* Add padding to make space for the fixed navbar */
+    .navbar {
+      background-color: rgba(0, 72, 73, 0.8);
+      color: white;
+    }
     .content {
-        padding-top: 40px; /* Adjust this value based on the height of your navbar */
+      padding-top: 80px;
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
     }
-</style>
+  </style>
+</head>
+<body>
 
-<!-- Logo in place of the title -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Telcontar Code Genius</a>
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="contact.html">Contact us</a>
+          <a class="nav-item nav-link" href="projects.html">Projects</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
+  <main class="content">
 <div class="content">
     <h1>Welcome to Telcontar Code Genius!</h1>
     <p>At Telcontar Code Genius, innovation starts with clarity. With a deep foundation in mathematics and a commitment to structured thinking, I specialize in solving complex problems that require more than surface-level solutions. From abstract system architecture to precise algorithm design, my work is driven by analytical insight and practical application.</p>
@@ -36,6 +58,8 @@
 <p>Telcontar Code Genius is not just about writing code; it's about solving hard problems elegantly and reliably. If your project calls for critical thinking and the ability to turn complexity into clarity, let’s build something exceptional together.</p>
 
 </div>
+  </main>
 
-{% endblock content %}
+</body>
+</html>
 
