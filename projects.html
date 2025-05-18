@@ -8,16 +8,20 @@
   text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
     .navbar {
-      background-color: rgba(0, 72, 73, 0.8);
-      color: white;
-    }
-    .content {
-      padding-top: 80px;
-      background-color: rgba(255, 255, 255, 0.7);
-      margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
-    }
+  background-color: rgba(0, 72, 73, 0.8);
+  color: white;
+  height: 60px; /* explicit */
+}
+
+.content {
+  padding-top: 120px; /* push down below navbar */
+  background-color: rgba(0, 72, 73, 0.75); /* blueish translucent */
+  color: white; /* text white inside */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+}
   </style>
 </head>
 <body>
@@ -48,7 +52,7 @@
         padding-top: 40px; /* Adjust this value based on the height of your navbar */
     }
 </style>
-  <main class="col-md-10 offset-md-1 bg-light-custom p-4 rounded shadow-lg">
+  <main class="content col-md-10 offset-md-1 p-4 rounded shadow-lg">
     <div class="row">
         <h2 class="text-center mb-4">🚗 Formula 1: Anatomy of a Race Car</h2>
         <p>
