@@ -1,27 +1,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <style>
-    body {
+   body {
   background-image: url('assets/homepage.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: white;
   text-shadow: 0 0 4px rgba(0,0,0,0.6);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-    .navbar {
+
+.navbar {
   background-color: rgba(0, 72, 73, 0.8);
   color: white;
-  height: 60px; /* explicit */
+  height: 60px;
 }
 
 .content {
-  padding-top: 120px; /* push down below navbar */
+  padding-top: 120px; /* push below navbar */
   background-color: rgba(0, 72, 73, 0.75); /* blueish translucent */
-  color: white; /* text white inside */
+  color: white !important; /* force white text */
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   max-width: 900px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+/* Remove any Bootstrap bg or shadow classes from your <main> to avoid overriding background */
+
   </style>
 </head>
 <body>
@@ -52,8 +60,7 @@
         padding-top: 40px; /* Adjust this value based on the height of your navbar */
     }
 </style>
-  <main class="content col-md-10 offset-md-1 p-4 rounded shadow-lg">
-    <div class="row">
+  <main class="content">
         <h2 class="text-center mb-4">🚗 Formula 1: Anatomy of a Race Car</h2>
         <p>
             At <strong>Telcontar Code Genius LTD</strong>, we don’t just write code—we engineer understanding. One of our showcase projects dives into the intricate world of Formula 1 engineering by transforming a modern F1 car into a living knowledge graph.
@@ -77,7 +84,6 @@
         <div class="text-center mt-4">
             <a href="#" class="btn btn-dark btn-lg">🚀 Explore the Graph (Coming Soon)</a>
         </div>
-    </div>
   </main>
 
 </body>
